@@ -7,6 +7,11 @@ angular.module('wildNoteApp')
         controller: Home
     })
 
-function Home() {
+function Home(Users) {
+    const that = this;
+    Users.get().$promise
+        .then(function (result) {
+            that.users = result.users;
+        })
 }
 

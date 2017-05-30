@@ -16,3 +16,32 @@
   bottom: 25px;
   right: 25px;
 }
+
+.notes {
+  margin-top: 10px;
+  background: #EEEEEE;
+  padding: 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.notes:hover {
+  box-shadow: 0 0 7px grey;
+}
+
+.name {
+  margin-top: 60px;
+}
+
+.scroll {
+overflow-y: scroll;
+  height: 400px;
+
+}
+
+.marge {
+  margin-left: 5px;
+}
+
+.padding {
+  padding: 0 10px;
+}

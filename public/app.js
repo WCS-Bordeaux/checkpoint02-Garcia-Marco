@@ -14,9 +14,10 @@ angular
 
     .config(config)
 
-// .factory("Hey", function() {
-//     return {getConseil: () => "utilise les factory pour créer ta ressource !"}
-// })
+    .factory("Users", ["$resource", function ($resource) {
+        return $resource("/users");
+    }])
+
 
 function Config($stateProvider, $urlRouterProvider) {
     const states = [
@@ -24,6 +25,11 @@ function Config($stateProvider, $urlRouterProvider) {
             name: "home",
             url: "/",
             component: "home"
+        },
+        {
+            name:"questions",
+            url: "/questions",
+            component: "questions"
         }
     ]
 

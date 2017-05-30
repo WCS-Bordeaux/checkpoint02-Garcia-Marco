@@ -138,17 +138,58 @@ qui seront affichés avec une boucle dans le template du component attaché à c
 Sinon tu peux aussi répondre en dessous de chaque question.
 
 a) Pourquoi utiliser $resource dans angular plutôt que $http ?
+   Parce que $resource contient $http et d'autres trucs. Donc autant l'utiliser
+
+
 b) C'est quoi la différence entre front-end et back-end en fait ?
+    Front-end : Tourne sur l'ordinateur client
+    Back-end : Tourne sur le serveur distant
+
+
 c) Pourquoi je peux pas utiliser document.getElementById dans NodeJS ?
+    Parce que c'est pour récupérer un Id contenu dans le html, je vois pas trop l'intérêt de l'utiliser côté serveur en fait
+
+    
 d) Pourquoi c'est très grave d'utiliser document.getElementById dans AngularJS ?
+    
+
 e) C'est quoi la différence entre NodeJS et Javascript ?
+    NodeJS est un framework de Javascript, une surcouche qui utilise JS et
+    rajoute des possibilités alors que Javascript est "juste" le language de base.
+
+
 f) En quoi c'est utile d'utiliser npm ?
+    Npm c'est un gestionnaire de paquets, donc il permet de téléchargés plein de modules cools rapidement.
+    Aussi parce que cela permet de gagner du temps lors des partages de projet, 
+    on sait directement à partir de package.json de quoi le projet à besoin pour fonctionner,
+    les créateurs, la version et d'autres infos utiles. Il permet aussi de tout initialisé en une commande :
+    "npm i"
+
+
 g) A quoi ça sert une base de donnée ? Et mongoDB ?
+    La base de donnée sert à stocker des informations. C'est un grand tableau.
+    mongoDB c'est un gestionnaire de base de données, il est là pour faciliter l'utilisation des bdd.
+
+
 h) Est-il possible de faire des relations entre plusieurs collections ? Est-ce une bonne pratique ?
+    Oui, mongodb est juste moins efficace que mySQL par exemple sur ce point la donc 
+    ce n'est pas forcèment la meilleure pratique.
+
+
 i) C'est quoi un document dans mongoDB ? et une collection au final ?
+    Un document c'est un objet json et une collection regroupe plusieurs documents
+
+
 j) Quelle serai la requête qui me permettrai d'aller chercher dans 
     ma db "toto" dans la collection "tata" l'utilisateur ayant pour nom "titi" ?
+     -> get
+
+
 k) Est-il plus important de sécuriser le client ou le serveur ? Pourquoi ?
+    Le serveur parce que c'est lui qui contient les informations importantes.
+    Le client à déjà toutes ses infos affichables dans la console du navigateur donc niveau sécurité...
+
+
 l) Pourquoi [1, 2, 3, () => "boom"][Number(true) + 2]() === "boom" ? Expliquez le plus précisément possible.
 m) Cite 3 directives angularjs.
 
