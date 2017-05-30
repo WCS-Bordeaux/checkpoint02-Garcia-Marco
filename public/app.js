@@ -2,7 +2,7 @@
 
 const config = [
     "$stateProvider",
-    "$urlRouteProvider",
+    "$urlRouterProvider",
     Config
 ]
 
@@ -18,7 +18,7 @@ angular
 //     return {getConseil: () => "utilise les factory pour créer ta ressource !"}
 // })
 
-function Config($stateProvider, $urlRouteProvider) {
+function Config($stateProvider, $urlRouterProvider) {
     const states = [
         {
             name: "home",

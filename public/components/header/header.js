@@ -1,9 +1,8 @@
 'use strict'
 
-angular.module('wildNoteApp')
-
-    .component('header', {
-        templateUrl: '/app/components/header/header.html',
+angular.module("wildNoteApp")
+    .component("header", {
+        templateUrl: "components/header/header.html",
         controller: Header
     })
 
